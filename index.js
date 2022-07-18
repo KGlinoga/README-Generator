@@ -9,7 +9,6 @@ inquirer.prompt([
       name: 'appTitle',
     },
     
-    
     {
           type: 'input',
           message: 'Give the description of your app?',
@@ -52,37 +51,50 @@ inquirer.prompt([
                                         name: 'questions',
                                       },
                                       ])
-                                      .then((response) => 
-                                        response.appTitle
-                                          ? console.log("#" + response.appTitle)
-                                        //   ?  appInfo.title = response.appTitle
-                                          : console.log('Please enter a Title for your app.')
-                                      );
-                                    //   console.log(appInfo.title)
-                                    
-                            
-                                .then((response) => 
-                                  !response.appTitle
+                  .then((ans) => 
+                                  !ans.appTitle
                                     ? console.log('Please enter a Title for your app.')
-                                    : saveInfo(response)
+                                    : userAnswers(ans)
                                     // :  appInfo.title = "hello"
                                 );
-                                    
-                                    // EOD Sunday - pseudocode so we can pick up here tomorrow: 
-                                    // need to use fs to write a new file containing all the user inputs
-                                    // need to add markup annotation to user inputs (might come before writing the file)
-                                    //I feel like we could add each answer to an object (including the markup) and THEN print the object to a markup file.  
-                                    
-                                    
-//                                     const saveInfo = (response) => {
-//     const appInfo1 = "#" + response.appTitle
-//     console.log(appInfo1);
-//     appInfo.title = response.appTitle;
-//     console.log(appInfo);
-//     fs.appendFile('mynewfile1.txt', appInfo.title, function (err) {
-//         if (err) throw err;
-//         console.log('Saved!');
-//       });
-// }
+                               
+                                const userAnswers = (ans) => {
+                                  console.log(ans);
+                                  const lower = ans.appTitle.toLowerCase();
+                                  fs.writeFile(`./output/${lower}.md`, `# ${ans.appTitle}
 
-//OK this is getting a little convoluted but the principles are working well!  So we'll use a function in .then, so we can add more stuf
+                                  ## Description
+                                  
+                                  ${ans.description}
+                                  
+                                  ## Table of Contents
+                                  
+                                  - ${ans.tableOfContents}
+                                  
+                                  ## Installation
+                                  
+                                  ${ans.installation}
+                                  
+                                  ## Usage
+                                  
+                                  ${ans.usage}
+                                  
+                                  ## Licenses: 
+                                  
+                                  ${ans.licenses}
+                                  
+                                  ## Contributing
+                                  
+                                  ${ans.contributing}
+                                  
+                                  ## Testing: 
+                                  
+                                  ${ans.testing}
+                                  
+                                  ## Questions:
+                                  
+                                  ${ans.questions}
+                                  `, (err) =>
+                                  err ? console.error(err) : console.log('nice!'))
+                                }
+                                    
