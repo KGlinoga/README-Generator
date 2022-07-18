@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const appInfo = {};
+const appInfo = [];
 
 inquirer
   .prompt([
@@ -9,6 +9,14 @@ inquirer
       message: 'What is the title of your project?',
       name: 'appTitle',
     },
+])
+.then((response) => 
+  !response.appTitle
+    ? console.log('Please enter a Title for your app.')
+    :   console.log("#" + response.appTitle)
+    // :  appInfo.title = "hello"
+);
+
     // {
     //   type: 'input',
     //   message: 'Give the description of your app?',
@@ -50,14 +58,17 @@ inquirer
     //     message: 'Enter instructions for asking questions about your app:',
     //     name: 'questions',
     //   },
-  ])
-  .then((response) => 
-    response.appTitle
-      ? console.log("#" + response.appTitle)
-    //   ?  appInfo.title = response.appTitle
-      : console.log('Please enter a Title for your app.')
-  );
+//   ])
+//   .then((response) => 
+//     response.appTitle
+//       ? console.log("#" + response.appTitle)
+//     //   ?  appInfo.title = response.appTitle
+//       : console.log('Please enter a Title for your app.')
+//   );
     //   console.log(appInfo.title)
       
   
-    
+    // EOD Sunday - pseudocode so we can pick up here tomorrow: 
+    // need to use fs to write a new file containing all the user inputs
+    // need to add markup annotation to user inputs (might come before writing the file)
+    //I feel like we could add each answer to an object (including the markup) and THEN print the object to a markup file.  
