@@ -6,7 +6,9 @@ ${ans.description}
 
 ## Table of Contents
 
-- ${ans.tableOfContents}
+- ${ans.tableOfContents1}
+- ${ans.tableOfContents2}
+- ${ans.tableOfContents3}
 
 ## Installation
 

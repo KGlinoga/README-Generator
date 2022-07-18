@@ -15,8 +15,18 @@ inquirer.prompt([
      },
     {
       type: 'input',
-      message: 'Enter the Table of Contents for your README:',
-      name: 'tableOfContents',
+      message: 'Enter the first section of the Table of Contents for your README:',
+      name: 'tableOfContents1',
+     },
+     {
+      type: 'input',
+      message: 'Enter the second section of the Table of Contents for your README:',
+      name: 'tableOfContents2',
+     },
+     {
+      type: 'input',
+      message: 'Enter the third section of the Table of Contents for your README:',
+      name: 'tableOfContents3',
      },
      {
       type: 'input',
@@ -64,35 +74,37 @@ const userAnswers = (ans) => {
   `# ${ans.appTitle}
 
   ## Description
-                                  
+  
   ${ans.description}
-                                  
+  
   ## Table of Contents
-                                  
-  - ${ans.tableOfContents}
-                                  
+  
+  - ${ans.tableOfContents1}
+  - ${ans.tableOfContents2}
+  - ${ans.tableOfContents3}
+  
   ## Installation
-                                  
+  
   ${ans.installation}
-                                  
+  
   ## Usage
-                                  
+  
   ${ans.usage}
-                                  
+  
   ## Licenses: 
-                                  
+  
   ${ans.licenses}
-                                  
+  
   ## Contributing
-                                  
+  
   ${ans.contributing}
-                                  
+  
   ## Testing: 
-                                  
+  
   ${ans.testing}
-                                  
+  
   ## Questions:
-                                  
+  
   ${ans.questions}`,
     (err) =>
      err ? console.error(err) : console.log('nice!'))
