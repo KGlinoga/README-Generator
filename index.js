@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const appInfo = {};
 
 inquirer
   .prompt([
@@ -50,8 +51,13 @@ inquirer
     //     name: 'questions',
     //   },
   ])
-  .then((response) =>
+  .then((response) => 
     response.appTitle
       ? console.log("#" + response.appTitle)
-      : console.log('!appTitle')
+    //   ?  appInfo.title = response.appTitle
+      : console.log('Please enter a Title for your app.')
   );
+    //   console.log(appInfo.title)
+      
+  
+    
