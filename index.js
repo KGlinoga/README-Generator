@@ -13,9 +13,11 @@ inquirer
 .then((response) => 
   !response.appTitle
     ? console.log('Please enter a Title for your app.')
-    :   console.log("#" + response.appTitle)
+    : saveInfo(response)
+// write a function that includes
     // :  appInfo.title = "hello"
 );
+ 
 
     // {
     //   type: 'input',
@@ -72,3 +74,9 @@ inquirer
     // need to use fs to write a new file containing all the user inputs
     // need to add markup annotation to user inputs (might come before writing the file)
     //I feel like we could add each answer to an object (including the markup) and THEN print the object to a markup file.  
+
+
+const saveInfo = (response) => {
+    console.log("#" + response.appTitle);
+        
+}
