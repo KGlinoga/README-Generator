@@ -7,9 +7,12 @@ ${ans.description}
 
 ## Table of Contents
 
-- ${ans.tableOfContents1}
-- ${ans.tableOfContents2}
-- ${ans.tableOfContents3}
+    1. [Installation](#installation)
+    2. [Usage]
+    3. [Licenses]
+    4. [Contributing]
+    5. [Testing] 
+    6. [Questions & Contact Information]
 
 ## Installation
 
@@ -35,6 +38,6 @@ ${ans.testing}
 
 ${ans.questions}
 
-Find me on GitHub: https://github.com/${ans.gitHub}
+Find me on GitHub: <https://github.com/${ans.gitHub}>
 
-Email me at ${ans.email}
+Email me at <${ans.email}>

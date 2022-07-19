@@ -1,22 +1,25 @@
-# Git
+# git
 
   ## Description
   
-  hub
+  
   
   ## Table of Contents
   
-  - trial
-  - again
-  - and 
-  
+  1. [Installation](#installation)
+  2. [Usage]
+  3. [Licenses]
+  4. [Contributing]
+  5. [Testing] 
+  6. [Questions & Contact Information]
+
   ## Installation
   
-  again
+  
   
   ## Usage
   
-  lets 
+  
   
   ## Licenses: 
   
@@ -24,18 +27,18 @@
   
   ## Contributing
   
-  go
+  
   
   ## Testing: 
   
-  already
+  
   
   ## Questions:
   
-  no
+  
 
-  Find me on GitHub: https://github.com/no
+  Find me on GitHub: https://github.com/
 
-  Email me at dang
+  Email me at 
 
-  no
+  

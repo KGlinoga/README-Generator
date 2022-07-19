@@ -89,10 +89,13 @@ const userAnswers = (ans) => {
   
   ## Table of Contents
   
-  - ${ans.tableOfContents1}
-  - ${ans.tableOfContents2}
-  - ${ans.tableOfContents3}
-  
+  1. [Installation](#installation)
+  2. [Usage]
+  3. [Licenses]
+  4. [Contributing]
+  5. [Testing] 
+  6. [Questions & Contact Information]
+
   ## Installation
   
   ${ans.installation}
