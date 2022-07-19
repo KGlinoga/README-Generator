@@ -1,6 +1,6 @@
 # git
   
-  ![GitLab (self-managed)](https://img.shields.io/gitlab/license/$%7Bans.appTitle%7D)
+  ![GitHub](https://img.shields.io/github/license/${ans.gitHub}/${ans.appTitle})
 
   ## Description
   
@@ -39,7 +39,7 @@
   
   
 
-  Find me on GitHub: https://github.com/
+  Find me on GitHub: https://github.com/kglinoga
 
   Email me at 
 

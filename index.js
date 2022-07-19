@@ -124,7 +124,7 @@ const badge = (ans) => {
   } else if (ans.licenses === "MIT"){
      licenseBadge.message = `Hello World`;
   } else if (ans.licenses === "GitHub"){
-     licenseBadge.message = "![GitLab (self-managed)](https://img.shields.io/gitlab/license/$%7Bans.appTitle%7D)";
+     licenseBadge.message = "![GitHub](https://img.shields.io/github/license/${ans.gitHub}/${ans.appTitle})";
   }  else if (ans.licenses === "Apache"){
      licenseBadge.message = "";
   }
