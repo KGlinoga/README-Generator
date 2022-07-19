@@ -1,6 +1,6 @@
 # git
   
-  
+  ![APM](https://img.shields.io/apm/l/git)
 
   ## Description
   
@@ -25,7 +25,7 @@
   
   ## Licenses: 
   
-  None
+  MIT
   
   ## Contributing
   
@@ -39,8 +39,8 @@
   
   
 
-  Find me on GitHub: https://github.com/
+  Find me, , this code and more on GitHub: <https://github.com/>
 
-  Email me at 
+  Email me any questions at <>
 
   
