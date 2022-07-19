@@ -122,11 +122,11 @@ const badge = (ans) => {
   if (ans.licenses === "None"){
      licenseBadge.message = "";
   } else if (ans.licenses === "MIT"){
-     licenseBadge.message = `Hello World`;
+     licenseBadge.message = `![APM](https://img.shields.io/apm/l/${ans.appTitle})`;
   } else if (ans.licenses === "GitHub"){
      licenseBadge.message = "![GitHub](https://img.shields.io/github/license/${ans.gitHub}/${ans.appTitle})";
   }  else if (ans.licenses === "Apache"){
-     licenseBadge.message = "";
+     licenseBadge.message = "![AUR license](https://img.shields.io/aur/license/${ans.appTitle})";
   }
 
 

@@ -1,6 +1,6 @@
-# git
+# git 
   
-  
+  ![APM](https://img.shields.io/apm/l/git )
 
   ## Description
   
@@ -25,7 +25,7 @@
   
   ## Licenses: 
   
-  None
+  MIT
   
   ## Contributing
   
