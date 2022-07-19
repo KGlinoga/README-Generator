@@ -1,9 +1,11 @@
 # git
+  
+  ![GitLab (self-managed)](https://img.shields.io/gitlab/license/$%7Bans.appTitle%7D)
 
   ## Description
   
-  
-  
+    
+
   ## Table of Contents
   
   1. [Installation](#installation)
@@ -23,7 +25,7 @@
   
   ## Licenses: 
   
-  license1
+  GitHub
   
   ## Contributing
   

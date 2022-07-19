@@ -1,6 +1,8 @@
 
 # ${ans.appTitle}
 
+${licenseBadge}
+
 ## Description
 
 ${ans.description}

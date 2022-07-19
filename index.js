@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const appInfo = {};
+const licenseBadge = {};
 
 inquirer.prompt([
     {
@@ -12,21 +13,6 @@ inquirer.prompt([
       type: 'input',
       message: 'Give the description of your app?',
       name: 'description'
-     },
-    {
-      type: 'input',
-      message: 'Enter the first section of the Table of Contents for your README:',
-      name: 'tableOfContents1',
-     },
-     {
-      type: 'input',
-      message: 'Enter the second section of the Table of Contents for your README:',
-      name: 'tableOfContents2',
-     },
-     {
-      type: 'input',
-      message: 'Enter the third section of the Table of Contents for your README:',
-      name: 'tableOfContents3',
      },
      {
       type: 'input',
@@ -42,7 +28,7 @@ inquirer.prompt([
        type: 'list',
       message: 'Choose the licenses for your app:',
       name: 'licenses',
-      choices: ["license1", "license2", "liscense3"]
+      choices: ["MIT", "GitHub", "Apache", "None"]
       },
        {
       type: 'input',
@@ -79,14 +65,17 @@ inquirer.prompt([
                                
 const userAnswers = (ans) => {
   console.log(ans);
+  badge(ans);
   const lower = ans.appTitle.toLowerCase();
   fs.writeFile(`./output/${lower}.md`, 
   `# ${ans.appTitle}
+  
+  ${licenseBadge.message}
 
   ## Description
   
-  ${ans.description}
-  
+  ${ans.description}  
+
   ## Table of Contents
   
   1. [Installation](#installation)
@@ -128,4 +117,17 @@ const userAnswers = (ans) => {
     (err) =>
      err ? console.error(err) : console.log('nice!'))
 }
-                                    
+                                  
+const badge = (ans) => {
+  if (ans.licenses === "None"){
+     licenseBadge.message = "";
+  } else if (ans.licenses === "MIT"){
+     licenseBadge.message = `Hello World`;
+  } else if (ans.licenses === "GitHub"){
+     licenseBadge.message = "![GitLab (self-managed)](https://img.shields.io/gitlab/license/$%7Bans.appTitle%7D)";
+  }  else if (ans.licenses === "Apache"){
+     licenseBadge.message = "";
+  }
+
+
+  }
