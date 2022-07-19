@@ -59,6 +59,16 @@ inquirer.prompt([
       message: 'Enter instructions for asking questions about your app:',
       name: 'questions',
       },
+      {
+      type: 'input',
+      message: 'Enter your GitHub username:',
+      name: 'gitHub',
+      },
+      {
+        type: 'input',
+        message: 'Enter your email address:',
+        name: 'email',
+        },
     ])
 
     .then((ans) => 
@@ -105,6 +115,12 @@ const userAnswers = (ans) => {
   
   ## Questions:
   
+  ${ans.questions}
+
+  Find me on GitHub: https://github.com/${ans.gitHub}
+
+  Email me at ${ans.email}
+
   ${ans.questions}`,
     (err) =>
      err ? console.error(err) : console.log('nice!'))

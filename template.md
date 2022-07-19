@@ -1,3 +1,4 @@
+
 # ${ans.appTitle}
 
 ## Description
@@ -33,3 +34,7 @@ ${ans.testing}
 ## Questions:
 
 ${ans.questions}
+
+Find me on GitHub: https://github.com/${ans.gitHub}
+
+Email me at ${ans.email}
