@@ -40,6 +40,6 @@ ${ans.testing}
 
 ${ans.questions}
 
-Find me on GitHub: <https://github.com/${ans.gitHub}>
+Find me, ${ans.gitHub}, this code and more on GitHub: <https://github.com/${ans.gitHub}>
 
-Email me at <${ans.email}>
+Email me any questions at <${ans.email}>
