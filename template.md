@@ -26,9 +26,9 @@ ${ans.usage}
 
 ## Licenses: 
 
-${ans.licenses}
+This app is covered by the ${ans.licenses} License.
 
-## Contributing
+## Contributing:
 
 ${ans.contributing}
 

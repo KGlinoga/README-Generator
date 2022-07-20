@@ -25,9 +25,9 @@
   
   ## Licenses: 
   
-  MIT
+  This app is covered by the MIT License.
   
-  ## Contributing
+  ## Contributing:
   
   
   
