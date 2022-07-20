@@ -49,8 +49,4 @@ Dummy Generated README Preview with MarkDown Formatting:
 The liscenses and corresponding badges came from <https://shields.io/>. 
 We also used node.js and inquirer.
 
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
+Dummy copy in generated README and demo video from <http://saganipsum.com/>.
