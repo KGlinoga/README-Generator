@@ -23,8 +23,6 @@ I learned to use node.js, built familiarity with the command-line terminal, and 
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
 node.js and inquirer packages are required for this app.  We used v16 for node.js and v8 for inquirer.
 
 ## Usage
@@ -47,8 +45,6 @@ Dummy Generated README Preview with MarkDown Formatting:
 ![dummy generated README Preview ](https://user-images.githubusercontent.com/28368622/179852840-2ea43865-1a06-4e4e-81dd-3433d9d421c1.png)
 
 ## Credits
-
-My collaborators included classmates like JiaJe He and Asiya Ahmed. My BootCampSpot tutor, Mansi Patel, was also super helpful, as was class TA Henry Weigand.
 
 The liscenses and corresponding badges came from <https://shields.io/>. 
 We also used node.js and inquirer.
