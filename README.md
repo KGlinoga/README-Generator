@@ -29,6 +29,10 @@ node.js and inquirer packages are required for this app.  We used v16 for node.j
 
 To use the README Generator app, open the index.js file in your preferred coding text editor. We prefer Visual Studio Code.  Open the file in your integrated Terminal and run the command "node index.js".  You should then be prompted with the relevant questions.  Your answers will be recorded and displayed in the subsequently generated .md file (named after your input for your app name).  Then, find the file in the ./output folder and use it however your app requires. 
 
+Demonstration Video: 
+
+https://user-images.githubusercontent.com/28368622/179873659-1722dfb6-f221-42af-b3e5-418f6c1daf67.mov
+
 App Start: 
 ![app start](https://user-images.githubusercontent.com/28368622/179852622-55b6134e-fa8e-4229-b551-e0e7371e7930.png)
 
@@ -49,8 +53,4 @@ Dummy Generated README Preview with MarkDown Formatting:
 The liscenses and corresponding badges came from <https://shields.io/>. 
 We also used node.js and inquirer.
 
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
+Dummy copy in generated README and demo video from <http://saganipsum.com/>.
