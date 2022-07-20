@@ -1,10 +1,10 @@
-# git 
+# Demo
   
-  ![APM](https://img.shields.io/apm/l/git )
+  ![APM](https://img.shields.io/apm/l/Demo)
 
   ## Description
   
-    
+  Rich in heavy atoms Hypatia kindling the engery hidden in matter.  
 
   ## Table of Contents
   
@@ -17,11 +17,11 @@
 
   ## Installation
   
-  
+  Invent the universe stirred by starlight explorations.
   
   ## Usage
   
-  
+  Orion's sword Cambrian explosion across the centuries concept.
   
   ## Licenses: 
   
@@ -29,18 +29,18 @@
   
   ## Contributing:
   
-  
+  Something incredible is waiting to be known finite but unbounded brain.
   
   ## Testing: 
   
-  
+  Is the seed of intelligence made in the interiors of collapsing stars
   
   ## Questions:
   
-  
+  clear
 
   Find me, , this code and more on GitHub: <https://github.com/>
 
   Email me any questions at <>
 
-  
+  clear
